@@ -23,7 +23,6 @@ double target_function(double x);
 double exact_solution(double a, double b);
 void log_results(const string& filename, const vector<string>& methods, const vector<double>& errors);
 
-
 // START OF IMPLEMENTATION
 
 double transform_x(double t, double a, double b) {
