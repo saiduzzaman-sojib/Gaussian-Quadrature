@@ -25,3 +25,10 @@ void log_results(const string& filename, const vector<string>& methods, const ve
 
 
 // START OF IMPLEMENTATION
+
+double transform_x(double t, double a, double b) {
+    return ((b - a) * t + (b + a)) / 2.0;
+}
+double scale_weight(double sum, double a, double b) {
+    return ((b - a) / 2.0) * sum;
+}
