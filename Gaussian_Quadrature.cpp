@@ -32,3 +32,14 @@ double transform_x(double t, double a, double b) {
 double scale_weight(double sum, double a, double b) {
     return ((b - a) / 2.0) * sum;
 }
+
+double solve_gauss_2(function<double(double)> f, double a, double b) {
+    
+    const double t = 0.577350269; 
+    const double w = 1.0;
+
+    double sum = w * f(transform_x(-t, a, b)) + 
+                 w * f(transform_x(t, a, b));
+
+    return scale_weight(sum, a, b);
+}
