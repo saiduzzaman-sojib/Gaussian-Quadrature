@@ -59,3 +59,19 @@ double solve_gauss_3(function<double(double)> f, double a, double b) {
 
     return scale_weight(sum, a, b);
 }
+
+// --- MEMBER 5: 4-Point Gauss-Legendre ---
+
+double solve_gauss_4(function<double(double)> f, double a, double b) {
+    
+    const double t1 = 0.339981044; 
+    const double t2 = 0.861136312; 
+
+    const double w1 = 0.652145155;
+    const double w2 = 0.347854845;
+
+    double sum = w1 * f(transform_x(-t1, a, b)) + w1 * f(transform_x(t1, a, b)) +
+                 w2 * f(transform_x(-t2, a, b)) + w2 * f(transform_x(t2, a, b));
+
+    return scale_weight(sum, a, b);
+}
