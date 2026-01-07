@@ -104,3 +104,21 @@ double solve_simpson(function<double(double)> f, double a, double b, int n) {
 
     return (h / 3.0) * sum;
 }
+// ---Simpson's 1/3 Rule ---
+// Higher accuracy comparison
+
+double solve_simpson(function<double(double)> f, double a, double b, int n) {
+    if (n % 2 != 0) n++; 
+    
+    double h = (b - a) / n;
+    double sum = f(a) + f(b);
+
+    for (int i = 1; i < n; i++) {
+        if (i % 2 == 0)
+            sum += 2.0 * f(a + i * h);
+        else
+            sum += 4.0 * f(a + i * h);
+    }
+
+    return (h / 3.0) * sum;
+}
