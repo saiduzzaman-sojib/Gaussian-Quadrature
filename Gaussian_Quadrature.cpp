@@ -122,3 +122,18 @@ double solve_simpson(function<double(double)> f, double a, double b, int n) {
 
     return (h / 3.0) * sum;
 }
+// --- Data Logging ---
+void log_results(const string& filename, const vector<string>& methods, const vector<double>& errors) {
+    ofstream file(filename);
+    
+    if (file.is_open()) {
+        file << "Method,Error\n"; // CSV Header
+        for (size_t i = 0; i < methods.size(); ++i) {
+            file << methods[i] << "," << errors[i] << "\n";
+        }
+        file.close();
+        cout << "[Data Saved]: Analysis exported to " << filename << endl;
+    } else {
+        cerr << "Error: Could not open file." << endl;
+    }
+}
