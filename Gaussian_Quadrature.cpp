@@ -75,3 +75,14 @@ double solve_gauss_4(function<double(double)> f, double a, double b) {
 
     return scale_weight(sum, a, b);
 }
+// ---Trapezoidal Rule ---
+// Used for comparison with Gaussian methods
+double solve_trapezoidal(function<double(double)> f, double a, double b, int n) {
+    double h = (b - a) / n;
+    double sum = f(a) + f(b);
+
+    for (int i = 1; i < n; i++) {
+        sum += 2.0 * f(a + i * h);
+    }
+    return (h / 2.0) * sum;
+}
