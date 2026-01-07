@@ -137,3 +137,44 @@ void log_results(const string& filename, const vector<string>& methods, const ve
         cerr << "Error: Could not open file." << endl;
     }
 }
+// --- Main Driver Function ---
+
+int main() {
+    cout << "=== Gaussian Quadrature Project (Group B3) ===" << endl;
+
+    double a = 0.0;
+    double b = 1.5;
+    
+    double exact = exact_solution(a, b);
+    cout << "Exact Integral Value: " << exact << "\n" << endl;
+
+    
+    double g2 = solve_gauss_2(target_function, a, b);
+    double g3 = solve_gauss_3(target_function, a, b);
+    double g4 = solve_gauss_4(target_function, a, b);
+    
+  
+    double trap = solve_trapezoidal(target_function, a, b, 4);
+    double simp = solve_simpson(target_function, a, b, 4);
+
+    vector<double> errors;
+    errors.push_back(abs(g2 - exact));
+    errors.push_back(abs(g3 - exact));
+    errors.push_back(abs(g4 - exact));
+    errors.push_back(abs(trap - exact));
+    errors.push_back(abs(simp - exact));
+
+    vector<string> names = {"Gauss-2", "Gauss-3", "Gauss-4", "Trapezoidal", "Simpson"};
+    
+    cout << left << setw(15) << "Method" << " | " << "Result" << " | " << "Error" << endl;
+    cout << "----------------------------------------------" << endl;
+    for(size_t i=0; i<names.size(); i++) {
+        cout << left << setw(15) << names[i] << " | " <<  
+                setprecision(6) << (i < 3 ? g2 : (i<4 ? trap : simp)) << " | " << // (Display logic simplified)
+                scientific << errors[i] << defaultfloat << endl;
+    }
+
+    log_results("results.csv", names, errors);
+
+    return 0;
+}
