@@ -104,23 +104,14 @@ double solve_simpson(function<double(double)> f, double a, double b, int n) {
 
     return (h / 3.0) * sum;
 }
-// ---Simpson's 1/3 Rule ---
-// Higher accuracy comparison
-
-double solve_simpson(function<double(double)> f, double a, double b, int n) {
-    if (n % 2 != 0) n++; 
-    
-    double h = (b - a) / n;
-    double sum = f(a) + f(b);
-
-    for (int i = 1; i < n; i++) {
-        if (i % 2 == 0)
-            sum += 2.0 * f(a + i * h);
-        else
-            sum += 4.0 * f(a + i * h);
-    }
-
-    return (h / 3.0) * sum;
+// TEST FUNCTIONS 
+double target_function(double x) {
+    return x * exp(x);
+}
+double exact_solution(double a, double b) {
+    double F_b = exp(b) * (b - 1.0);
+    double F_a = exp(a) * (a - 1.0);
+    return F_b - F_a;
 }
 // --- Data Logging ---
 void log_results(const string& filename, const vector<string>& methods, const vector<double>& errors) {
