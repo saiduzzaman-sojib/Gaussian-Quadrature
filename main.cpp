@@ -39,7 +39,6 @@ double solve_gauss_2(function<double(double)> f, double a, double b) {
     return scale_weight(sum, a, b);
 }
 
-
 // 3-Point Gauss-Legendre
 double solve_gauss_3(function<double(double)> f, double a, double b) {
     
@@ -54,7 +53,6 @@ double solve_gauss_3(function<double(double)> f, double a, double b) {
     return scale_weight(sum, a, b);
 }
 
-
 // 4-Point Gauss-Legendre 
 double solve_gauss_4(function<double(double)> f, double a, double b) {
     
@@ -67,7 +65,6 @@ double solve_gauss_4(function<double(double)> f, double a, double b) {
 
     return scale_weight(sum, a, b);
 }
-
 
 //Trapezoidal Rule 
 double solve_trapezoidal(function<double(double)> f, double a, double b, int n) {
@@ -124,7 +121,6 @@ void log_results(const string& filename, const vector<string>& methods, const ve
         cerr << "Error: Could not open file." << endl;
     }
 }
-
 
 //Main Driver Function
 int main() 
