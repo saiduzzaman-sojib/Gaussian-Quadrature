@@ -19,7 +19,6 @@ double target_function(double x);
 double exact_solution(double a, double b);
 void log_results(const string& filename, const vector<string>& methods, const vector<double>& errors);
 
-
 // Start Of Implementation
 double transform_x(double t, double a, double b) {
     return ((b - a) * t + (b + a)) / 2.0;
@@ -49,7 +48,7 @@ double solve_gauss_3(function<double(double)> f, double a, double b) {
     double sum = w1 * f(transform_x(t1, a, b)) +
                  w2 * f(transform_x(-t2, a, b)) +
                  w2 * f(transform_x(t2, a, b));
-
+    
     return scale_weight(sum, a, b);
 }
 
