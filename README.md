@@ -62,7 +62,7 @@ Simpson         | 2.24299    | 2.155500e-03
 * Newton-Cotes methods are set to $n=4$ intervals to match the computational cost of 4-point Gaussian quadrature.
 * Simpson's rule requires an even number of intervals.
 
-  ## Contributors
+## Contributors
 
 <a href="https://github.com/username1">
   <img src="https://github.com/saiduzzaman-sojib.png" width="50" height="50" alt="Member 1"/>
