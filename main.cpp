@@ -76,7 +76,6 @@ double solve_trapezoidal(function<double(double)> f, double a, double b, int n) 
     return (h / 2.0) * sum;
 }
 
-
 //Simpson's 1/3 Rule
 double solve_simpson(function<double(double)> f, double a, double b, int n) {
     if (n % 2 != 0) n++; 
@@ -88,10 +87,8 @@ double solve_simpson(function<double(double)> f, double a, double b, int n) {
         else
             sum += 4.0 * f(a + i * h);
     }
-
     return (h / 3.0) * sum;
 }
-
 
 // Test Function
 double target_function(double x) {
