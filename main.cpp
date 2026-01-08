@@ -110,21 +110,25 @@ double exact_solution(double a, double b) {
 void log_results(const string& filename, const vector<string>& methods, const vector<double>& errors) {
     ofstream file(filename);
     
-    if (file.is_open()) {
+    if (file.is_open()) 
+    {
         file << "Method,Error\n"; 
         for (size_t i = 0; i < methods.size(); ++i) {
             file << methods[i] << "," << errors[i] << "\n";
         }
         file.close();
         cout << "[Data Saved]: Analysis exported to " << filename << endl;
-    } else {
+    } 
+    else 
+    {
         cerr << "Error: Could not open file." << endl;
     }
 }
 
 
 //Main Driver Function
-int main() {
+int main() 
+{
     cout << "=== Gaussian Quadrature Project (Group B3) ===" << endl;
 
     double a = 0.0;
@@ -153,7 +157,8 @@ int main() {
     cout << left << setw(15) << "Method" << " | " << "Result" << " | " << "Error" << endl;
     cout << "----------------------------------------------" << endl;
     
-    for(size_t i=0; i<names.size(); i++) {
+    for(size_t i=0; i<names.size(); i++) 
+    {
         cout << left << setw(15) << names[i] << " | " <<  
                 setw(10) << setprecision(6) << results[i] << " | " << 
                 scientific << errors[i] << defaultfloat << endl;
