@@ -32,7 +32,7 @@ Ensure you have a C++ compiler installed:
 | **Output** | Prints formatted table to console. |
 | **Export** | Writes `Method, Error` data to CSV file. |
 
-## 📊 Example Output
+## Example Output
 
 ```text
 === Gaussian Quadrature Project (Group B3) ===
