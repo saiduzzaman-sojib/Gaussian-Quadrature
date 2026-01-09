@@ -148,7 +148,8 @@ int main()
 
     vector<string> names = {"Gauss-2", "Gauss-3", "Gauss-4", "Trapezoidal", "Simpson"};
     
-    cout << left << setw(15) << "Method" << " | " << "Result" << " | " << "Error" << endl;
+   
+    cout << left << setw(15) << "Method" << " | " << setw(10) << "Result" << " | " << "Error" << endl;
     cout << "----------------------------------------------" << endl;
     
     for(size_t i=0; i<names.size(); i++) 
