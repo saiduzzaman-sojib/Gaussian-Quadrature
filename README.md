@@ -49,6 +49,9 @@ Simpson         | 2.24299    | 2.155500e-03
 
 [Success] Analysis exported to results.csv
 ```
+## Convergence Graph
+![Error Convergence Plot](error_plot.png)
+
 ## Concepts Used
 
 * **Gaussian Quadrature:** Selects optimal nodes and weights to integrate polynomials of degree $2n-1$ exactly.
