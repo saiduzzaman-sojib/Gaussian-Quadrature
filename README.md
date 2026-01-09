@@ -124,3 +124,6 @@ Simpson         | 2.24299      | 2.155500e-03
 <a href="https://github.com/username9">
   <img src="https://github.com/nomanishak420.png" width="50" height="50" alt="Member 8"/>
 </a>
+<a href="https://github.com/username10">
+  <img src="https://github.com/trisha1031.png" width="50" height="50" alt="Member 8"/>
+</a>
