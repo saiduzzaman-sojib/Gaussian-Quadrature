@@ -90,6 +90,7 @@ double solve_simpson(function<double(double)> f, double a, double b, int n) {
     return (h / 3.0) * sum;
 }
 
+
 // Test Function
 double target_function(double x) {
     return x * exp(x);
