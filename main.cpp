@@ -38,19 +38,7 @@ double solve_gauss_2(function<double(double)> f, double a, double b) {
     return scale_weight(sum, a, b);
 }
 
-// 3-Point Gauss-Legendre
-double solve_gauss_3(function<double(double)> f, double a, double b) {
-    
-    const double t1 = 0.0; 
-    const double t2 = 0.774596669; 
-    const double w1 = 0.888888889; 
-    const double w2 = 0.555555556; 
-    double sum = w1 * f(transform_x(t1, a, b)) +
-                 w2 * f(transform_x(-t2, a, b)) +
-                 w2 * f(transform_x(t2, a, b));
-    
-    return scale_weight(sum, a, b);
-}
+
 
 // 4-Point Gauss-Legendre 
 double solve_gauss_4(function<double(double)> f, double a, double b) {
