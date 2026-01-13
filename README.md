@@ -97,33 +97,36 @@ Simpson         | 2.24299      | 2.155500e-03
 
 ## Contributors
 
-<a href="https://github.com/username1">
+<a href="https://github.com/saiduzzaman-sojib">
   <img src="https://github.com/saiduzzaman-sojib.png" width="50" height="50" alt="Member 1"/>
 </a>
-<a href="https://github.com/username2">
+<a href="https://github.com/TasmeoulMiyad">
   <img src="https://github.com/TasmeoulMiyad.png" width="50" height="50" alt="Member 2"/>
 </a>
-<a href="https://github.com/username3">
+<a href="https://github.com/ArianTithy">
   <img src="https://github.com/ArianTithy.png" width="50" height="50" alt="Member 3"/>
 </a>
-<a href="https://github.com/username4">
+<a href="https://github.com/fahimsr01712">
   <img src="https://github.com/fahimsr01712.png" width="50" height="50" alt="Member 4"/>
 </a>
-<a href="https://github.com/username5">
+<a href="https://github.com/moitrimitu21">
   <img src="https://github.com/moitrimitu21.png" width="50" height="50" alt="Member 5"/>
 </a>
-<a href="https://github.com/username6">
+<a href="https://github.com/rifatulisalmshakib">
   <img src="https://github.com/rifatulisalmshakib.png" width="50" height="50" alt="Member 6"/>
 </a>
-<a href="https://github.com/username7">
+<a href="https://github.com/Shoriful-Shuvo">
   <img src="https://github.com/Shoriful-Shuvo.png" width="50" height="50" alt="Member 7"/>
 </a>
-<a href="https://github.com/username8">
+<a href="https://github.com/rahidul5650">
   <img src="https://github.com/rahidul5650.png" width="50" height="50" alt="Member 8"/>
 </a>
-<a href="https://github.com/username9">
+<a href="https://github.com/nomanishak420">
   <img src="https://github.com/nomanishak420.png" width="50" height="50" alt="Member 8"/>
 </a>
-<a href="https://github.com/username10">
+<a href="https://github.com/trisha1031">
   <img src="https://github.com/trisha1031.png" width="50" height="50" alt="Member 8"/>
+</a>
+<a href="https://github.com/TashreefMuhammad">
+  <img src="https://github.com/TashreefMuhammad.png" width="50" height="50" alt="Member 8"/>
 </a>
